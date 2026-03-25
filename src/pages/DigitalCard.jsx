@@ -64,7 +64,7 @@ export default function DigitalCard() {
             disabled
             className="btn btn-primary mt-8 px-8 py-4 rounded-full opacity-60 cursor-not-allowed"
           >
-            {language === 'en' ? 'Coming Soon' : 'Скоро'} 🔜
+            {language === 'en' ? 'Coming Soon' : 'Скоро...'} 🔜
           </button>
         </div>
       </div>
