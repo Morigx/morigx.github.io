@@ -1,0 +1,140 @@
+/* Главная страница - стили */
+
+.home-page {
+  min-height: 100vh;
+  position: relative;
+  padding: 20px;
+}
+
+/* Никнейм в левом верхнем углу */
+.nickname {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.05em;
+  transform: rotate(-5deg);
+  transform-origin: top left;
+  z-index: 5;
+}
+
+/* Контейнер для переключателей */
+.controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+/* Стиль кнопок переключения */
+.control-btn {
+  background-color: var(--ui-element-bg);
+  color: var(--accent-cyan);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.control-btn:hover {
+  background-color: var(--ui-element-hover);
+  transform: scale(1.05);
+}
+
+/* Основной контент с кнопкой по центру */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30vh auto 0;
+  max-width: fit-content;
+}
+
+/* Кнопка-ссылка на Digital Card (стиль из Uiverse) */
+.digital-card-link {
+  align-items: center;
+  background-image: var(--accent-gradient);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  display: inline-flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.digital-card-link:active,
+.digital-card-link:hover {
+  outline: 0;
+}
+
+.digital-card-link span {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.digital-card-link:hover span {
+  background: transparent;
+}
+
+.digital-card-link:active {
+  transform: scale(0.9);
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+  .nickname {
+    font-size: 1.5rem;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-3deg);
+  }
+  
+  .controls {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .control-btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+  
+  .main-content {
+    margin-top: 25vh;
+  }
+  
+  .digital-card-link {
+    font-size: 16px;
+    min-width: 120px;
+  }
+  
+  .digital-card-link span {
+    padding: 14px 20px;
+  }
+}

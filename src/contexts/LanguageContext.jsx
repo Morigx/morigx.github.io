@@ -2,6 +2,9 @@ import { createContext, useContext, useState, useEffect } from 'react';
 
 const translations = {
   en: {
+    toggleLanguage: 'Toggle language',
+    toggleTheme: 'Toggle theme',
+    digitalCard: 'Digital Card',
     home: {
       title: 'gtnntg — Digital Identity',
       description: 'Digital Card',
@@ -16,6 +19,9 @@ const translations = {
     },
   },
   ru: {
+    toggleLanguage: 'Переключить язык',
+    toggleTheme: 'Переключить тему',
+    digitalCard: 'Цифровая карточка',
     home: {
       title: 'gtnntg — Цифровая личность',
       description: 'Цифровая карточка',
