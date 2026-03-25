@@ -11,7 +11,6 @@ function App() {
     <ThemeProvider>
       <LanguageProvider>
         <BrowserRouter>
-          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/digitalcard" element={<DigitalCardHub />} />
