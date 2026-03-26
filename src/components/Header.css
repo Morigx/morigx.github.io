@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+}
+
+.header-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.header-btn {
+  background: rgba(128, 128, 128, 0.2);
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: inherit;
+}
+
+.header-btn:hover {
+  background: rgba(128, 128, 128, 0.3);
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .header-btn {
+  background: rgba(0, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.3);
+}
+
+[data-theme="dark"] .header-btn:hover {
+  background: rgba(0, 255, 255, 0.2);
+}

@@ -1,0 +1,92 @@
+.hub {
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem;
+}
+
+.hub-main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hub-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.hub-description {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 3rem;
+  font-size: 1.125rem;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 212, 255, 0.5);
+}
+
+[data-theme="dark"] .card-item {
+  border-color: rgba(0, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .card-item:hover {
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.15);
+  border-color: rgba(0, 255, 255, 0.6);
+}
+
+.card-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-avatar span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .card-avatar {
+  background: linear-gradient(135deg, #00ffff 0%, #9d4edd 100%);
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-name {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-description {
+  margin: 0;
+  opacity: 0.7;
+  font-size: 0.875rem;
+}
